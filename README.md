@@ -134,7 +134,7 @@ This section breaks down the real-time data pipeline, step-by-step, as shown in 
   - ✅ Ensure both services share the same security configuration and subnet access
 - 🛑 **API Rate Limits** (100 records/request on free tier)
   - ✅ Handled via pagination logic in Glue script
-- 💰 **Cost Management**: Entire project will be deleted post-publishing to avoid AWS charges (college student hustle 💪)
+- 💰 **Cost Management**: Entire project will be deleted post-publishing to avoid AWS charges 
 
 ---
 
