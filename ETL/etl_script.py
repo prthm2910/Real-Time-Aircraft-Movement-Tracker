@@ -142,7 +142,7 @@ kinesis_df = glueContext.create_data_frame.from_options(
     connection_type="kinesis",
     connection_options={
         "typeOfData": "kinesis", 
-        "streamARN": "arn:aws:kinesis:ap-south-1:072071232375:stream/airportops-data-stream", 
+        "streamARN": "<STREAM_ARN>", 
         "classification": "json", 
         "startingPosition": "latest", 
         "inferSchema": "true"
@@ -166,7 +166,7 @@ def processBatch(data_frame, batchId):
         # --- 3.3. Write to Sinks ---
         # Define paths and options for the S3 sinks
         now = datetime.datetime.now()
-        s3_base_path = "s3://airport-cleaned-zone-quaser29/"
+        s3_base_path = "<S3_PATH>"
         partition_path = f"ingest_year={now.year}/ingest_month={now.month:0>2}/ingest_day={now.day:0>2}/ingest_hour={now.hour:0>2}/"
         
         # Write the staging table to S3 (Silver Layer)
@@ -201,7 +201,7 @@ def processBatch(data_frame, batchId):
             frame=staging_dyf, 
             connection_type="redshift", 
             connection_options={
-                "redshiftTmpDir": "s3://aws-glue-assets-072071232375-ap-south-1/temporary/", 
+                "redshiftTmpDir": "<TEMP_DIR_PATH>", 
                 "useConnectionProperties": "true", 
                 "dbtable": "public.flight_events_staging", 
                 "connectionName": "AirportOps-redshift-database-connection"
