@@ -32,7 +32,7 @@ The pipeline is built on a serverless AWS stack and follows the **Medallion Arch
 ## 🏛️ Architecture Diagram
 This diagram, created with Eraser.io, outlines the complete architecture of the pipeline.
 
-![AirportOps Architecture Diagram](Images\Airport-Ops-Data-Architecture-Diagram.png)
+![AirportOps Architecture Diagram](Images/Airport-Ops-Data-Architecture-Diagram.png)
 
 ## 💻 Technology Stack
 
@@ -97,4 +97,4 @@ This repository is divided into two main components, each with its own detailed 
 ## 📊 Final Dashboard
 Here is a screenshot of the final AWS QuickSight dashboard built on top of the Redshift star schema.
 
-![QuickSight Dashboard Screenshot](Images\Airport-Ops-Dashboard.png)
+![QuickSight Dashboard Screenshot](Images/Airport-Ops-Dashboard.png)
