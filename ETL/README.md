@@ -12,7 +12,8 @@ The job follows the principles of the **Medallion Architecture**, taking raw Bro
 ## 🏛️ ETL Job Diagram
 This diagram shows the complete visual workflow of the AWS Glue job as designed in Glue Studio.
 
-![Airport Ops ETL Diagram](Images/Airport-Ops-ETL-Diagram.png)
+![Airport Ops ETL Diagram](../Images/Airport-Ops-Dashboard.png)
+
 
 ### Transformation Logic Breakdown
 The job performs the following key transformations in sequence:
